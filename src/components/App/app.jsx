@@ -4,7 +4,7 @@ import Header from '../Header/header';
 import Logo from '../Logo/logo';
 import Search from '../Search/search';
 import './index.css';
-import SeachInfo from '../SearchInfo';
+import SearchInfo from '../SearchInfo';
 import api from '../../utils/api';
 import useDebounce from '../../hooks/useDebounce';
 import { isLiked } from '../../utils/product';
@@ -135,7 +135,7 @@ function App() {
           </>
         </Header>
         <main className='content'>
-          <SeachInfo searchText={searchQuery} />
+          <SearchInfo searchText={searchQuery} />
           <Routes location={(backgroundLocation && { ...backgroundLocation, pathname: initialPath }) || location}>
             <Route index element={
               <CatalogPage />
