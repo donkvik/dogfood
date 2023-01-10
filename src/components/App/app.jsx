@@ -4,7 +4,7 @@ import Header from '../Header/header';
 import Logo from '../Logo/logo';
 import Search from '../Search/search';
 import './index.css';
-import SearchInfo from '../SearchInfo';
+import SeachInfo from '../SearchInfo';
 import api from '../../utils/api';
 import useDebounce from '../../hooks/useDebounce';
 import { isLiked } from '../../utils/product';
